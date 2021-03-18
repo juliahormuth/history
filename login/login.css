@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between; /*distanciou os itens header */
+   align-items: center; /*centralizou e devido tamanho */
+   padding: 30px 10%; /*alinhou da forma escolhida */
+   }
+
+   .header{
+    padding: 2px;
+}
+
+.logo {
+    cursor: pointer;
+    margin-right: auto; /* ao padronizar o logo nesta posição, o restante dos itens header ficaram mais próximos do outro lado */
+}
+
+.lifetime{
+  margin-left: 1400px;
+    cursor:pointer;
+}
+
+.aelogo{
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+
+
+form{
+    background-color: #0d0e0e;
+    max-width: 500px;
+    width:70%;
+    padding: 20px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 40px;
+ 
+}
+form h3{
+    font-family: 'Consolas';
+    font-size: 40px;
+    text-align: center;
+    color:white;
+    margin-bottom: 20px;
+
+}
+form input[type=text]{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    padding-left: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+form input[type=password]{
+    width: 100%;
+    height: 45px;
+    border-radius: 40px;
+    padding-left: 10px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+
+form input[type=submit]{
+    width: 30%;
+    height: 30px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 40px;
+    background-color: #fe1834;
+    font-family: 'Consolas';
+    font-size: 20px;   
+    margin-left:10px;
+    margin-top: 70px;
+}
+
+form input[type=submit]:hover{
+    background-color: #38393b;
+    color: #eeeeee;
+    
+}
+
+form input[type-text]:focus{
+    outline:0;
+}
+
+form input[type-password]:focus{
+    outline:0;
+}
+
+form input[placeholder]{
+    font-size: 20px;
+    font-family: 'Arial';
+}
+
+
+.input{
+    
+    display:flex;
+    align-items: center;
+    
+}
+
+
+.input > i{
+ font-size: 20px;
+ color: white;
+ padding-right: 20px;
+}
+
+.enter{
+    display:flex;
+    align-items: center;
+}
+.enter > i{
+    color: #fe1834;
+    padding-left: 140px;
+    padding-right: 5px;
+    margin-top: 70px;
+}
+
+.esqueceu {
+    display:flex;
+    text-decoration:none;
+    padding-left: 280px;
+    color:#fe1834;
+    padding-top: 20px;
+    font-family: 'Arial';
+    font-size: 15px;
+
+   
+}
+
+.esqueceu:hover{
+ color: #38393b;
+ 
+}
+
+.assinar{
+    font-size:15px;
+    color: #eeeeee;
+    font-family: 'Arial';
+    font-size: 20px;
+    padding-top: 90px;
+}
+
+.agora{
+    font-size:15px;
+    color: #fe1834;
+    font-family: 'Arial';
+    font-size: 20px;
+    text-decoration:none;
+    padding-top: 20px;
+}
+.agora:hover{
+    color: #38393b;
+}
+
+.conectar{
+    font-size:15px;
+    font-family: 'Arial';
+    font-size: 15px;
+    padding-top: 100px;
+    display:flex;
+    align-items: center;
+    padding-left: 150px;
+   
+    
+}
+
+.conectar > i{
+    text-decoration: none;
+    color: white;
+    padding-right: 10px;
+   
+}
+
+.face{
+    text-decoration: none;
+    color: #eeeeee;
+}
+
+.face:hover{
+    color:#fe1834;
+}

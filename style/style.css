@@ -1,0 +1,295 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box; /*definindo padrão */
+}
+
+body{
+    background-color: black;
+    font-family: 'Consolas';
+}
+
+header{
+    display: flex;
+    justify-content: space-between; /*distanciou os itens header */
+    align-items: center;/*centralizou e devido tamanho */
+    padding: 30px 10%; /*alinhou da forma escolhida */
+}
+
+li, a{
+    font-family: 'Consolas';
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none; /*tirando sublinhado */
+}
+
+.header{
+    padding:2px;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto; /* ao padronizar o logo nesta posição, o restante dos itens header ficaram mais próximos do outro lado */
+}
+
+.nave{
+    list-style: none;
+    padding-right: 300px;  /*nave jogado mais a direita */
+}
+   
+
+
+.nave li{
+    display: inline-block; /* elementos lado a lado */
+    padding: 0px 5px;
+}
+
+.nave li a{
+    font-family: 'Consolas';
+    font-size: 25px;
+    text-decoration: none;
+    color: #969696;
+    transition: all 0.3 ease 0s;
+}
+
+.nave li a:hover{
+    color: #fe1834;
+}
+
+button{
+    padding: 10px 20px;  /*aumentando seu tamanho */
+    padding-right: 20px;
+    background-color: #fe1834;
+    border:none;
+    border-radius: 50px; /* borda arredondada */
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    outline-color: none;
+    color: black;
+    font-size: 15px;
+}
+button:hover{
+    background-color: #38393b;
+    color: white;
+}
+.lifetime{
+padding-right: 20px;
+cursor:pointer;
+}
+.aelogo{
+    padding-right: 20px;
+    cursor: pointer;
+}
+.btn{
+    color:white;
+    float:right;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #969696;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    position: absolute;
+    bottom: 83.7%;  /* posicionar ao lado do nave */
+    left: 80%;
+    background: none;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+}
+.box:hover>.txt{
+    width: 240px;
+    padding: 0 6px;
+    color: black;
+    background: #eeeeee;
+    border-radius: 40px;
+}
+.box:hover>.btn{
+    background: #38393b;
+}
+.btn{
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background: #fe1834;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+.txt{
+    border:none;
+    background: none;
+    outline: none;
+    float: left;
+    padding:0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    font-size: 20px;
+}
+
+/* ----- ACABA NAVEGAÇÃO ------- */
+/*------ COMEÇA PARTE PRINCIPAL ------ */
+
+.knopf{
+    margin-top: 800px; /*DESCER BOTOES */
+    margin-left: 100px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.knopf i{
+    margin-right: 5px;
+}
+
+.titulo{
+display: flex;
+color: white;
+font-size: 50px;
+font-family: 'Consolas';
+margin-left: 90px;
+margin-bottom: 20px;
+align-items: center;
+justify-content: space-between;
+}
+
+/* >>>>--------- MEU ERRO ---------<<<<
+.container{
+    position: absolute; /* ISSO AQUI TRAVOU TODOS OS EFEITOS DO SITE 
+   bottom:0;
+   left: 0;
+   right:0;
+   padding-bottom: 50px;
+}
+*/
+.filme-principal{
+    font-size: 20px;
+    background: url("../img/war.png");
+
+    height:1000px; /*Tamanha da caixa*/
+    background-size:cover; /*Especificar tamanho */
+    display: flex;
+    flex-direction: column; /*ficar como coluna */
+    justify-content: center; /*centralizar coluna*/
+    align-items: flex-start; /*para que comecem da esquerda */
+    margin-top: 30px;
+}
+
+.descricao{
+    display:flex;
+    margin-left: 250px;
+    margin-bottom: -10px;
+    color: white; 
+    font-size: 20px;
+    
+}
+
+/* ------- FIM DA PARTE PRINCIPAL ---- */
+/* ------- CAROUSEL ----------------*/
+
+.filme{ /*config das imagens no carrossel */
+    height: 10%;
+    width: 10%;
+    display:flex;
+    
+    }
+
+.series{
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 40px;
+}
+    
+    .carrosel-filmes {
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin: 5px;
+        color: var(--azul);
+        margin-top: 5px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: rgba(0,0,0,.50);
+        padding-top:15px;
+    }
+ /* ------------- CURTA ---------- */   
+    .carrosel-curta{
+        display: flex;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 1.3rem;
+        margin: 5px;
+        margin-top: 10px;
+        margin-left: 30px;
+        margin-right: 30px;
+        background-color: rgba(0,0,0,.50);
+        padding-top:15px;
+        
+}
+.curtah{
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+    font-size: 40px;
+}
+
+/* ------------- FOOTER ------------ */
+
+
+.containertwo{
+
+    max-width: 1170px;
+    margin:0;
+    justify-content: space-between;
+    margin-left: 650px;
+    margin-top: 200px;
+    
+   
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+ul{
+    list-style: none;
+}
+.footer{
+    margin-top: 150px;
+    background-color: black;
+    
+   /* padding: 70px 0; */
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    margin-top: 20px;
+    font-size: 20px;
+    color: #969696;
+    font-family: 'Consolas';
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 300;
+    position: relative;
+}
+
+.footer-col li a{
+    margin-top:5px;
+    color: #969696;
+    font-size:15px;
+}
+
+
+

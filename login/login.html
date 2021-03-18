@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/login/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2? família=Bai+Jamjuree:wght@200&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7b75b8fe9c.js" crossorigin="anonymous"></script>
+
+
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="http://127.0.0.1:5500/index.html"> <img class="logo" src="/img/black.png" alt=""scrset=""> </a>
+        <img class="lifetime" src ="/img/lifetime.png" alt =""scrset="">
+        <img class="aelogo" src="/img/ae.png" alt=""scrset="">
+
+    </header>
+    <form>
+ <h3 >Acesse sua conta!</h3>
+ 
+ <div class="input">
+    <i class="fas fa-at"></i>
+<input id="email" type="text" name="email" placeholder="Digite seu email" />
+ </div>
+<div class="input">
+    <i class="fas fa-lock"></i>
+<input  id="password" type="password" name="senha" placeholder= "Digite sua senha"/>
+</div>
+<a class="esqueceu" href="#">Esqueceu sua senha? </a>
+<div class="enter">
+ <i class="fas fa-sign-in-alt"></i>
+<input id="entrar" type="submit" name="acao" value="LOGIN" />
+</div>
+<div class="conectar">
+     <i class="fab fa-facebook"></i> 
+<a class="face" href="#">Entre com o Facebook </a>
+</div>
+<h3 class="assinar"> Novo por aqui? <a class="agora" href="https://www.google.com">ASSINE AGORA!</a> </h3>
+ </form>
+
+<script>
+var email = document.getElementById('email');
+
+email.addEventListener('focus',()=>{
+    email.style.borderColor = "#4A5F6A";
+});
+
+</script>
+
+
+</body>
+</html>
