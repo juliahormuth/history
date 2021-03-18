@@ -34,26 +34,25 @@ li, a{
 
 .nave{
     list-style: none;
-    padding-right: 300px;  /*nave jogado mais a direita */
+    padding-right: 300px;
+    padding-left: 40%;      /*nave jogado mais a direita */
 }
-   
 
-
-.nave li{
+.nave li {
     display: inline-block; /* elementos lado a lado */
     padding: 0px 5px;
 }
 
-.nave li a{
+.nave li a {
     font-family: 'Consolas';
     font-size: 25px;
     text-decoration: none;
     color: #969696;
-    transition: all 0.3 ease 0s;
+    transition: all 0.3s ease 0s;
 }
 
 .nave li a:hover{
-    color: #fe1834;
+    color: #fe1834; /*ao passar o mouse */
 }
 
 button{
